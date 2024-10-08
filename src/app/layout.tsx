@@ -1,15 +1,15 @@
+// types
 import type { Metadata } from 'next';
+
+// assets
 import localFont from 'next/font/local';
+
+// styles
 import './globals.css';
 
-const geistSans = localFont({
-  src: './fonts/GeistVF.woff',
-  variable: '--font-geist-sans',
-  weight: '100 900'
-});
-const geistMono = localFont({
-  src: './fonts/GeistMonoVF.woff',
-  variable: '--font-geist-mono',
+const spaceGrotesk = localFont({
+  src: './fonts/SpaceGrotesk.ttf',
+  variable: '--font-space-grotesk',
   weight: '100 900'
 });
 
@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="light">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
+      <body className={`${spaceGrotesk.variable} antialiased`}>{children}</body>
     </html>
   );
 }

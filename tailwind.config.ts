@@ -1,3 +1,4 @@
+// libraries
 import { createThemes } from 'tw-colors';
 
 // types
@@ -9,14 +10,26 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}'
   ],
-  theme: {},
+  theme: {
+    colors: {},
+    screens: {
+      mobile: '320px',
+      desktop: '1440px'
+    },
+    extend: {
+      fontFamily: {
+        space_grotesk: ['var(--font-space-grotesk)']
+      }
+    }
+  },
   plugins: [
     createThemes({
       light: {
-        primary_test: '#ccc'
-      },
-      dark: {
-        primary_test: '#333'
+        primary: {
+          green: '#B9FF66',
+          black: '#191A23',
+          gray: '#F3F3F3'
+        }
       }
     })
   ]

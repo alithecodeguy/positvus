@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  /* Text FA Typography (IRANSansX) */
+  h1 {
+    @apply font-space_grotesk desktop:text-[60px] text-[43px] font-medium;
+  }
+
+  h2 {
+    @apply font-space_grotesk desktop:text-[40px] text-[36px] font-medium;
+  }
+
+  h3 {
+    @apply font-space_grotesk desktop:text-[30px] text-[26px] font-medium;
+  }
+
+  h4 {
+    @apply font-space_grotesk desktop:text-[20px] text-[18px] font-medium;
+  }
+
+  h5 {
+    @apply font-space_grotesk desktop:text-[18px] text-[16px] font-normal;
+  }
+}
