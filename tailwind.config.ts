@@ -4,6 +4,13 @@ import { createThemes } from 'tw-colors';
 // types
 import type { Config } from 'tailwindcss';
 
+export const primaryColors = {
+  green: '#B9FF66',
+  dark: '#191A23',
+  grey: '#F3F3F3',
+  black: '#000000'
+};
+
 const config: Config = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -25,12 +32,7 @@ const config: Config = {
   plugins: [
     createThemes({
       light: {
-        primary: {
-          green: '#B9FF66',
-          dark: '#191A23',
-          grey: '#F3F3F3',
-          black: '#000000'
-        }
+        primary: primaryColors
       }
     })
   ]
