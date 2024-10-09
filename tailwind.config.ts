@@ -8,7 +8,8 @@ export const primaryColors = {
   green: '#B9FF66',
   dark: '#191A23',
   grey: '#F3F3F3',
-  black: '#000000'
+  black: '#000000',
+  white: '#ffffff'
 };
 
 const config: Config = {
@@ -18,7 +19,7 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}'
   ],
   theme: {
-    colors: {},
+    // colors: {},
     screens: {
       mobile: '320px',
       desktop: '1440px'
