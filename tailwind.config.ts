@@ -27,8 +27,9 @@ const config: Config = {
       light: {
         primary: {
           green: '#B9FF66',
-          black: '#191A23',
-          gray: '#F3F3F3'
+          dark: '#191A23',
+          grey: '#F3F3F3',
+          black: '#000000'
         }
       }
     })

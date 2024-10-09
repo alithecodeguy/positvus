@@ -5,22 +5,22 @@
 @layer utilities {
   /* Text FA Typography (IRANSansX) */
   h1 {
-    @apply font-space_grotesk desktop:text-[60px] text-[43px] font-medium;
+    @apply font-space_grotesk text-[43px] font-medium desktop:text-[60px];
   }
 
   h2 {
-    @apply font-space_grotesk desktop:text-[40px] text-[36px] font-medium;
+    @apply font-space_grotesk text-[36px] font-medium desktop:text-[40px];
   }
 
   h3 {
-    @apply font-space_grotesk desktop:text-[30px] text-[26px] font-medium;
+    @apply font-space_grotesk text-[26px] font-medium desktop:text-[30px];
   }
 
   h4 {
-    @apply font-space_grotesk desktop:text-[20px] text-[18px] font-medium;
+    @apply font-space_grotesk text-[18px] font-medium desktop:text-[20px];
   }
 
-  h5 {
-    @apply font-space_grotesk desktop:text-[18px] text-[16px] font-normal;
+  p {
+    @apply font-space_grotesk text-[16px] font-normal desktop:text-[18px];
   }
 }
